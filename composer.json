@@ -1,0 +1,14 @@
+{
+    "name": "huberj/web-ex-nachricht",
+    "description": "Program to send a message to a specified user over webex",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "huberj"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    }
+}

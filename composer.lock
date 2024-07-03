@@ -1,0 +1,78 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "336891f19e9eb45bf241595c65927dee",
+    "packages": [
+        {
+            "name": "sllh/composer-lint",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/soullivaneuh/composer-lint.git",
+                "reference": "acf0b38f1b4efca1b11e7589fa57f7749adf744f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/soullivaneuh/composer-lint/zipball/acf0b38f1b4efca1b11e7589fa57f7749adf744f",
+                "reference": "acf0b38f1b4efca1b11e7589fa57f7749adf744f",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0",
+                "symfony/phpunit-bridge": "^5.2"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "SLLH\\ComposerLint\\LintPlugin",
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SLLH\\ComposerLint\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sullivan SENECHAL",
+                    "email": "soullivaneuh@gmail.com"
+                }
+            ],
+            "description": "Extends the composer validate command with extra rules",
+            "keywords": [
+                "composer",
+                "lint",
+                "plugin",
+                "validate"
+            ],
+            "support": {
+                "issues": "https://github.com/soullivaneuh/composer-lint/issues",
+                "source": "https://github.com/soullivaneuh/composer-lint/tree/v2.0.0"
+            },
+            "time": "2021-03-13T15:49:11+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
