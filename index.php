@@ -9,15 +9,16 @@
  * @link     Ka
  */
 try{
-        include "./SendWebexMessage.php";
-        echo "Email: ";
-        $email = trim(fgets(STDIN));
-        echo "Message: ";
-        $message = trim(fgets(STDIN));
-        $SendMsg = new SendWebexMessage();
-        $SendMsg->setMail($email);
-        $SendMsg->setMessage($message);
-        $SendMsg->send();
+    include("./SendWebexMessage.php");
+    require ('./vendor/autoload.php');
+    echo "Email: ";
+    $email = trim(fgets(STDIN));
+    echo "Message: ";
+    $message = trim(fgets(STDIN));
+    $SendMsg = new SendWebexMessage();
+    $SendMsg->setMail($email);
+    $SendMsg->setMessage($message);
+    $SendMsg->send();
 }
 catch(Exception $e){
     echo $e->getMessage()."\n";

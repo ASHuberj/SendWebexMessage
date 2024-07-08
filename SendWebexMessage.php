@@ -9,6 +9,9 @@
  * @link     Ka
  */
 
+
+include "./history.php";
+
 /**
  * Allows to build and send messages over the Webex api to a specified user.
  * 
@@ -27,7 +30,7 @@ class SendWebexMessage
     /**
      * Valid token, to send the message with.
      */
-    const TOKEN = "NDc4ZWUyYWQtNmQzZS00MzkzLTk3MDctZjdlZDU4NzE5Yzk1NWExNjQxYjItYWI5_PF84_2dab1fc3-8a75-41c0-8f60-f3f0f8b4c5ff";
+    const TOKEN = "M2IxNmVmM2UtOGIwZi00OGVkLWE5NmMtYmRiMjY0NTU1NjJhMmFmYjk2NTgtZTRh_PF84_2dab1fc3-8a75-41c0-8f60-f3f0f8b4c5ff";
     private $_message = "";
     private $_email = "";
 
@@ -124,7 +127,16 @@ class SendWebexMessage
                     
                 throw new Exception("httpCode: $httpCode\nerror message: $_message\n");
             }
+            
+            try {
+                $history = new MsgHistory();
+    
+                $history->storeMessage($this->getMail(), $this->getMessage());
+                print_r($history->printMessages());          
                 
+            } catch (Exception $e) {
+                echo $e->getMessage()."\n";
+            }
         }
         finally{
             curl_close($ch);
