@@ -3,10 +3,10 @@
  * Manages a mysql database for storing all messages sent and prints them to the console in table format
  *
  * @category Project
- * @package  Ka
+ * @package  Webexnachricht
  * @author   Joseph Huber <joseph.huber@aspiria.com>
  * @license  https://pseudolicense.com pseudolicense
- * @link     Ka
+ * @link     None
  */
 
     /**

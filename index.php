@@ -3,10 +3,10 @@
  * Sends message to webex user.
  *
  * @category Project
- * @package  Ka
+ * @package  Webexnachricht
  * @author   Joseph Huber <joseph.huber@aspiria.com>
  * @license  https://pseudolicense.com pseudolicense
- * @link     Ka
+ * @link     None
  */
 try{
     include("./SendWebexMessage.php");

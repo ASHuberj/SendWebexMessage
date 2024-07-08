@@ -2,11 +2,11 @@
 /**
  * Creating a class, which object can send messages to a specified target 
  * 
- * @category Ka
- * @package  Ka
+ * @category Project
+ * @package  Webexnachricht
  * @author   Joseph Huber <joseph.huber@aspiria.com>
  * @license  https://pseudolicense.com pseudolicense
- * @link     Ka
+ * @link     None
  */
 
 
